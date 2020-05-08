@@ -1,31 +1,33 @@
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - enter_location
+  - thanks
+
+entities:
+  - state
+
+slots:
+  state:
+    type: text
+    initial_value: "total"
+
+actions:
+  - action_give_location_status
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey there! I am CoronaBot and I give updates about the current COVID-19 situation in India. Is there anything you would like to know?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_finding_info:
+  - text: "I'm fetching the details for you..."
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_welcome_and_saftey_instructions:
+  - text: "1 STAY at home"
+  - text: "2 KEEP safe distance"
+  - text: "3 WASH your hands often"
+  - text: "4 COVER your mouth while coughing"
+  - text: "5 SICK? call the helpline"
+  - text: "Take care! Be safe :)"
 
 session_config:
   session_expiration_time: 60

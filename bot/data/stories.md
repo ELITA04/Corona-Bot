@@ -1,31 +1,9 @@
-## happy path
+## ask for corona details and safety precautions
 * greet
   - utter_greet
-* mood_great
-  - utter_happy
+* enter_location
+  - utter_finding_info
+  - action_give_location_status
+* thanks
+ - utter_welcome_and_saftey_instructions
 
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
-
-## say goodbye
-* goodbye
-  - utter_goodbye
-
-## bot challenge
-* bot_challenge
-  - utter_iamabot
