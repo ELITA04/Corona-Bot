@@ -1,9 +1,128 @@
-## ask for corona details and safety precautions
+## ask for overall corona details
 * greet
-  - utter_greet
-* enter_location
-  - utter_finding_info
-  - action_give_location_status
+    - utter_greet
+* enter_state
+    - state_form
+    - form{"name": "state_form"}
+    - form{"name": null}
 * thanks
- - utter_welcome_and_saftey_instructions
+    - utter_welcome_and_safety_instructions
 
+
+## Wrong entry positive end happy
+* greet
+    - utter_greet
+* enter_state{"state": "gao"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Goa"}
+    - slot{"validated": null}
+    - slot{"requested_slot": "validated"}
+* affirm
+    - utter_did_that_help
+* affirm
+    - utter_happy_to_help
+
+## Wrong entry positive end sad
+* greet
+    - utter_greet
+* enter_state{"state": "gao"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Goa"}
+    - slot{"validated": null}
+    - slot{"requested_slot": "validated"}
+* affirm
+    - utter_did_that_help
+* deny
+    - utter_will_do_better
+
+## Correct entry positive end happy
+* greet
+    - utter_greet
+* enter_state{"state": "maharashtra"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Maharashtra"}
+    - slot{"validated": true}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - utter_did_that_help
+* affirm
+    - utter_happy_to_help
+
+## Correct entry positive end sad
+* greet
+    - utter_greet
+* enter_state{"state": "maharashtra"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Maharashtra"}
+    - slot{"validated": true}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - utter_did_that_help
+* deny
+    - utter_will_do_better
+
+## Wrong then right then say thanks end happy
+* greet
+    - utter_greet
+* enter_state{"state": "naggland"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Nagaland"}
+    - slot{"validated": null}
+    - slot{"requested_slot": "validated"}
+* form: deny
+    - form: state_form
+    - slot{"validated": false}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+* enter_state{"state": "nagaland"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Nagaland"}
+    - slot{"validated": true}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - utter_did_that_help
+* affirm
+    - utter_happy_to_help
+
+## Wrong then right then say thanks end sad
+* greet
+    - utter_greet
+* enter_state{"state": "naggland"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Nagaland"}
+    - slot{"validated": null}
+    - slot{"requested_slot": "validated"}
+* form: deny
+    - form: state_form
+    - slot{"validated": false}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+* enter_state{"state": "nagaland"}
+    - state_form
+    - form{"name": "state_form"}
+    - slot{"state": "Nagaland"}
+    - slot{"validated": true}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - utter_did_that_help
+* deny
+    - utter_will_do_better

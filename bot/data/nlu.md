@@ -1,4 +1,3 @@
-
 ## intent:greet
 - hey
 - hello
@@ -14,7 +13,23 @@
 - goodevening
 - good afternoon
 
-## intent:enter_location
+## intent:affirm
+- yes
+- yep
+- yeppie
+- yeah
+- ok
+- okay
+
+## intent:deny
+- no
+- nope
+- noppie
+- nah
+- not ok
+- not okay
+
+## intent:enter_state
 - Whats the situation in [maharashtra](state)?
 - How is [gujarat](state)?
 - Updates on [delhi](state)
@@ -32,6 +47,10 @@
 - [goa](state) covid
 - [odisha](state) status
 - status in [west bengal](state)
+- [gao](state)
+- [maharashtra](state) covid status
+- [naggland](state)
+- [nagaland](state)
 
 ## intent:thanks
 - thanks
@@ -40,4 +59,4 @@
 - hey there, thanks!
 
 ## lookup:state
-data/lookup_tables/states.txt
+  data/lookup_tables/states.txt

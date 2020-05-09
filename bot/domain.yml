@@ -1,34 +1,57 @@
-intents:
-  - greet
-  - enter_location
-  - thanks
+actions:
+  - utter_apologies
+  - utter_did_that_help
+  - utter_finding_info
+  - utter_greet
+  - utter_happy_to_help
+  - utter_welcome_and_safety_instructions
 
 entities:
   - state
 
-slots:
-  state:
-    type: text
-    initial_value: "total"
+forms:
+  - state_form
 
-actions:
-  - action_give_location_status
+intents:
+  - greet
+  - enter_state
+  - deny
+  - affirm
+  - thanks
 
 responses:
-  utter_greet:
-  - text: "Hey there! I am CoronaBot and I give updates about the current COVID-19 situation in India. Is there anything you would like to know?"
-
+  utter_apologies:
+  - text: "I'm sorry for not getting it right the first time.\nMaybe try again?"
+  
+  utter_did_that_help:
+  - text: Did that help you?
+  
   utter_finding_info:
-  - text: "I'm fetching the details for you..."
+  - text: I'm fetching the details for you...
+  
+  utter_greet:
+  - text: Hey there! I am CoronaBot and I give updates about the current COVID-19
+      situation in India. Is there anything you would like to know?
+  
+  utter_happy_to_help:
+  - text: That's great to know! We are always happy to help!
 
-  utter_welcome_and_saftey_instructions:
-  - text: "1 STAY at home"
-  - text: "2 KEEP safe distance"
-  - text: "3 WASH your hands often"
-  - text: "4 COVER your mouth while coughing"
-  - text: "5 SICK? call the helpline"
-  - text: "Take care! Be safe :)"
+  utter_will_do_better:
+  - text: "Apologies! We'll try to do better next time"
+  
+  utter_welcome_and_safety_instructions:
+  - text: Your welcome! Stay Safe
 
 session_config:
-  session_expiration_time: 60
   carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+
+slots:
+  requested_slot:
+    type: unfeaturized
+  state:
+    auto_fill: false
+    type: text
+  validated:
+    auto_fill: false
+    type: bool

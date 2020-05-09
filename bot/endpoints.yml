@@ -3,7 +3,7 @@
 # Server where the models are pulled from.
 # https://rasa.com/docs/rasa/user-guide/configuring-http-api/#fetching-models-from-a-server/
 
-#models:
+# models:
 #  url: http://my-server.com/models/default_core@latest
 #  wait_time_between_pulls:  10   # [optional](default: 100)
 
@@ -11,7 +11,7 @@
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
 action_endpoint:
- url: "http://localhost:5055/webhook"
+ url: "http://2e10a933.ngrok.io/webhook"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
