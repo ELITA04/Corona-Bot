@@ -126,3 +126,29 @@
     - utter_did_that_help
 * deny
     - utter_will_do_better
+
+## provide precautionary measures affirm
+* greet
+    - utter_greet
+* ask_precautions
+    - action_provide_precautions
+    - utter_did_that_help
+* affirm
+    - utter_happy_to_help
+
+## provide precautionary measures deny
+* greet
+    - utter_greet
+* ask_precautions
+    - action_provide_precautions
+    - utter_did_that_help
+* deny
+    - utter_will_do_better
+
+## todays news updates
+* greet
+    - utter_greet
+* ask_news
+    - action_news_updates
+* thanks
+    - utter_welcome_and_safety_instructions

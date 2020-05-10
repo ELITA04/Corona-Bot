@@ -5,6 +5,8 @@ actions:
   - utter_greet
   - utter_happy_to_help
   - utter_welcome_and_safety_instructions
+  - action_provide_precautions
+  - action_news_updates
 
 entities:
   - state
@@ -18,6 +20,8 @@ intents:
   - deny
   - affirm
   - thanks
+  - ask_precautions
+  - ask_news
 
 responses:
   utter_apologies:

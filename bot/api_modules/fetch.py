@@ -1,5 +1,6 @@
 import requests
 from difflib import get_close_matches
+import xml.etree.ElementTree as ET
 
 states = {'Maharashtra', 'Gujarat', 'Delhi', 'Tamil Nadu', 'Rajasthan',
 'Madhya Pradesh', 'Uttar Pradesh', 'Andhra Pradesh', 'Punjab', 'West Bengal',
@@ -31,3 +32,10 @@ def check_state(state):
         return closest_match[0], False
     else:
         return state, True
+
+def get_news_links():
+    news_link = 'https://www.who.int/rss-feeds/news-english.xml'
+    repsonse = requests.get(news_link)
+    tree = ET.fromstring(repsonse.text)
+    links =  tree.findall('.//link')
+    return links[2:7]

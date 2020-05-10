@@ -58,5 +58,18 @@
 - Thank you so much
 - hey there, thanks!
 
+## intent:ask_precautions
+- how do i protect myself from covid?
+- any precautionary measures I can take?
+- precautions to take
+- what can I do to protect my family from the virus?
+- how can I take care of myself during the pandemic?
+
+## intent:ask_news
+- give me covid news
+- give me news updates
+- hows the covid situation today?
+- any covid news for today?
+
 ## lookup:state
   data/lookup_tables/states.txt

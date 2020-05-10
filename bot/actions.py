@@ -1,11 +1,11 @@
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Tracker
-from rasa_sdk.forms import FormAction
+from rasa_sdk.forms import FormAction, Action
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
-from api_modules.fetch import get_state_data, check_state
+from api_modules.fetch import get_state_data, check_state, get_news_links
 
 class StateForm(FormAction):
 
@@ -63,5 +63,35 @@ class StateForm(FormAction):
         if status['statenotes'] != '':
             output += f'Extra Notes: {status["statenotes"]}\n'
         return output
-        
 
+    class PrecautionMessage(Action):
+        def name(self) -> Text:
+            return "action_provide_precautions"
+
+        def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            output = ""
+            output = '1. STAY at home\n'
+            output += '2. KEEP a safe distance\n'
+            output += '3. WASH your hands often\n'
+            output += '4. COVER your mouth while coughing\n'
+            output += '5. SICK? call the helpline'
+            dispatcher.utter_message(output)
+
+            return []
+
+    class GetNews(Action):
+        def name(self) -> Text:
+            return "action_news_updates"
+
+        def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            links = get_news_links()
+            output = ''
+            output += 'Here are a list of WHO links with the latest updates\n'
+            for link in links:
+                output += link.text + '\n'
+            dispatcher.utter_message(output)
+            return []
