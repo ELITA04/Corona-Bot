@@ -35,3 +35,4 @@ tamil nadu
 delhi
 gujarat
 maharashtra
+total

@@ -9,7 +9,7 @@ states = {'Maharashtra', 'Gujarat', 'Delhi', 'Tamil Nadu', 'Rajasthan',
 'Himachal Pradesh', 'Ladakh', 'Andaman and Nicobar Islands', 'Meghalaya', 'Puducherry', 'Goa', 'Manipur', 'Mizoram', 'Arunachal Pradesh',
 'Dadra and Nagar Haveli', 'Nagaland', 'Daman and Diu', 'Lakshadweep', 'Sikkim', 'Total'}
 
-def get_state_data(state, data_type=None):    
+def get_state_data(state):    
     url = "https://api.covid19india.org/data.json"
     repsonse = requests.get(url).json()
 
@@ -19,10 +19,8 @@ def get_state_data(state, data_type=None):
     statewise_response = repsonse['statewise']
     state_information = [s for s in statewise_response if s['state'] == state][0]
     
-    if data_type is not None:
-        return state_information[data_type]
-    else:
-        return state_information
+    return state_information
+        
 
 def check_state(state):
     state_split = state.split(' ')
