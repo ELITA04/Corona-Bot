@@ -203,5 +203,8 @@
 - what can I do
 - what more can you tell me
 
+## intent:stop
+- You too
+
 ## lookup:states.txt
   data/lookup_tables/states.txt

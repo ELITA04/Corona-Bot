@@ -1,6 +1,7 @@
 ## start conversation
 * start
     - utter_aboutus
+    - utter_help
 * other
 	- utter_fallback
 
@@ -196,13 +197,13 @@
 * thanks
     - utter_welcome_and_safety_instructions
 
-## interactive_story_enter_state_1
+## interactive story enter state 1
 * enter_state
     - state_status_form
     - form{"name": "state_status_form"}
     - slot{"requested_slot": "state"}
 
-## interactive_story_enter_state_affirm_1
+## interactive story enter state affirm 1
 * enter_state{"state": "assam"}
     - state_status_form
     - form{"name": "state_status_form"}
@@ -272,7 +273,6 @@
     - slot{"status": null}
     - form{"name": null}
     - slot{"requested_slot": null}
-    - utter_did_that_help
     - utter_did_that_help
 
 ## interactive_story_large_story_1
@@ -395,7 +395,7 @@
     - form{"name": null}
     - slot{"requested_slot": null}
 
-## New Story
+## Long Story
 
 * greet
     - utter_greet
@@ -411,7 +411,6 @@
     - slot{"status":null}
     - form{"name":null}
     - slot{"requested_slot":null}
-    - utter_did_that_help
 * help_me
     - utter_help
 * deaths
@@ -424,3 +423,23 @@
     - utter_did_that_help
 * thanks
     - utter_welcome_and_safety_instructions
+
+## Issue with deaths
+
+* deaths
+    - action_get_death_rate_of_india
+    - utter_did_that_help
+
+## Recovered and Deaths
+
+* recovered
+    - action_get_recovered_cases_of_india
+* deaths
+    - action_get_death_rate_of_india
+    - utter_did_that_help
+
+## Start Conversation 2
+
+* start
+    - utter_aboutus
+    - utter_help
