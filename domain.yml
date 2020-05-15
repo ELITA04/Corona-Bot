@@ -19,8 +19,8 @@ intents:
 - ask_precautions
 - recovered
 - confirmed
-- other
 - help_me
+- other
 entities:
 - state
 slots:
@@ -36,24 +36,31 @@ slots:
     type: bool
     auto_fill: false
 responses:
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy_to_help:
+  - text: That's great to know! We are always happy to help!
   utter_aboutus:
   - text: Greetings! I am a bot designed to provide the latest updates in India. I
       can provide the information about the lastest news by the WHO, precautionary
       measures to be taken and the updates about different states in India.
   utter_apologies:
-  - text: "I'm sorry for not getting it right the first time.\nMaybe try again?"
+  - text: I'm sorry for not getting it right the first time. Maybe try again?
+  utter_fallback:
+  - text: Sorry. I'm afraid I didn't get you.
   utter_finding_info:
   - text: I'm fetching the details for you...
+  utter_greet:
+  - text: Hey there! I am CoronaBot and I give updates about the current COVID-19
+      situation in India. Is there anything you would like to know?
+  utter_help:
+  - text: You can ask us queries like (but not limited to):- Deaths in Maharashtra-
+      India covid status- Assam recoveries- Confirmed cases in Kerala- Active cases
+      Delhi etc.- We will try our best to keep you informed!
   utter_welcome_and_safety_instructions:
   - text: You are welcome! Stay Safe
   utter_will_do_better:
   - text: Apologies! We'll try to do better next time
-  utter_fallback:
-  - text: Sorry. I'm afraid I didn't get you.
-  utter_help:
-  - text: "You can ask us queries like (but not limited to):\n- Deaths in Maharashtra\n\
-      - India covid status\n- Assam recoveries\n- Confirmed cases in Kerala\n- Active\
-      \ cases Delhi etc.\n- We will try our best to keep you informed!"
 actions:
 - action_get_active_cases_of_india
 - action_get_confirmed_cases_of_india

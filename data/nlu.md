@@ -183,6 +183,7 @@
 - What can you tell me
 - what can you do?
 - what do you do?
+- /start
 
 ## intent:other
 - red zones
@@ -197,10 +198,9 @@
 - which are the green zone states?
 
 ## intent:help_me
-- help me 
+- help me
 - how do i go about?
 - what can I do
-- help me
 - what more can you tell me
 
 ## lookup:states.txt
