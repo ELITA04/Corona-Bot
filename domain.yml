@@ -42,15 +42,8 @@ responses:
       measures to be taken and the updates about different states in India.
   utter_apologies:
   - text: "I'm sorry for not getting it right the first time.\nMaybe try again?"
-  utter_did_that_help:
-  - text: Did that help you?
   utter_finding_info:
   - text: I'm fetching the details for you...
-  utter_greet:
-  - text: Hey there! I am CoronaBot and I give updates about the current COVID-19
-      situation in India. Is there anything you would like to know?
-  utter_happy_to_help:
-  - text: That's great to know! We are always happy to help!
   utter_welcome_and_safety_instructions:
   - text: You are welcome! Stay Safe
   utter_will_do_better:
