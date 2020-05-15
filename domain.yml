@@ -2,6 +2,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- enter_district
+- deaths+enter_district
 - active
 - thanks
 - enter_state
@@ -23,6 +25,7 @@ intents:
 - other
 entities:
 - state
+- district
 slots:
   requested_slot:
     type: unfeaturized
@@ -61,6 +64,8 @@ responses:
   - text: You are welcome! Stay Safe
   utter_will_do_better:
   - text: Apologies! We'll try to do better next time
+  utter_thanks:
+  - text: Thank you!
 actions:
 - action_get_active_cases_of_india
 - action_get_confirmed_cases_of_india
@@ -78,5 +83,6 @@ actions:
 - utter_will_do_better
 - utter_fallback
 - utter_help
+- utter_thanks
 forms:
 - state_status_form

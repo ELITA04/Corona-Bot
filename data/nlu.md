@@ -15,6 +15,9 @@
 - Hey there
 - What is your name?
 - Hello
+- Hi
+- Hellooo
+- cases in [amethi](district)
 
 ## intent:affirm
 - yes
@@ -24,6 +27,7 @@
 - ok
 - okay
 - Yes
+- Okay
 
 ## intent:deny
 - no
@@ -32,6 +36,8 @@
 - nah
 - not ok
 - not okay
+- NO
+- No
 
 ## intent:enter_state
 - Whats the situation in [maharashtra](state)?
@@ -81,6 +87,27 @@
 - how is the situation in [assam](state)?
 - how is the situation in [Goa](state)?
 - cases in [delhi](state)?
+- [Goa](state)
+- Situation in [india](state)
+- [India](state) COVID status
+- [india](state)
+- updates on [india](state)
+- cases in [uttar pradesh](state)
+- [Bihar](state)
+- [India](state) covid status
+- Total cases in [india](state)
+- situation in [india](state)
+- Affected in [Gujarat](state)
+- Tests in [Pune](district)
+- [Maharashtra](state) updates please
+- [maharashtra](state) updates please
+- [maharashtra](state)
+- Can you give me an update on number of affected people in [Uttar Pradesh](state)
+- [maharashtra](state) status
+- [Maharashtra](state)
+- [India](state)
+- [Bihar](state)-unknkown
+- Today new cases in [Maharashtra](state)
 
 ## intent:deaths
 - dead cases
@@ -91,12 +118,16 @@
 - deaths
 - Deaths
 - deaths in Mizroram
+- All deaths
+- Deaths in india
+- Death
 
 ## intent:recovered
 - recovered cases
 - number of recoveries
 - how many recovered
 - recovered in India
+- recovered
 
 ## intent:active
 - active cases
@@ -144,6 +175,7 @@
 - [goa](state) covid active
 - [maharashtra](state) active cases
 - active cases in [Kerala](state)
+- Can you tell me the number of active cases in [Uttar Pradesh](state)
 
 ## intent:confirmed+enter_state
 - what is the confirmed number of cases in [tamil nadu](state)?
@@ -162,6 +194,12 @@
 - bye bye
 - Good job
 - yes, thanks
+- Nice
+- cool, Nice work kev :)
+- thank you
+- Cool
+- Stay safe
+- you too
 
 ## intent:ask_precautions
 - how do i protect myself from covid?
@@ -169,6 +207,7 @@
 - precautions to take
 - what can I do to protect my family from the virus?
 - how can I take care of myself during the pandemic?
+- How to be safe
 
 ## intent:ask_news
 - give me covid news
@@ -178,6 +217,9 @@
 - covid updates
 - inida updates
 - covid news
+- Today
+- Yesterday
+- So is any vaccine found for the virus
 
 ## intent:start
 - What can you tell me
@@ -187,24 +229,43 @@
 
 ## intent:other
 - red zones
-- Mumbai cases
 - Red zone
-- Mumbai
+- [Mumbai](district)
 - how are you
 - china updates
 - which are the states with high covid cases?
-- Mumbai updates?
 - red zones in Mumbai
 - which are the green zone states?
+- Treatment for COVID
+- Unknown
+
+## intent:enter_district
+- [Mumbai](district) cases
+- [Mumbai](district) updates?
+- Cases in [Pune](district)
+- [Wayanad](district)
+- cases in [Bareilly](district)
+- Today in [Mumbai](district)
+- cases [nagpur](district)
+- cases in [mumbai](district)
 
 ## intent:help_me
 - help me
 - how do i go about?
 - what can I do
 - what more can you tell me
+- help
 
 ## intent:stop
 - You too
+- Exit
+- welcome
+
+## intent:deaths+enter_district
+- Deaths in [Nagpur](state)
 
 ## lookup:states.txt
   data/lookup_tables/states.txt
+
+## lookup:districts.txt
+  data/districts.txt
