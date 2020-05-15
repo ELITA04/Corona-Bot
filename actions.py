@@ -102,7 +102,16 @@ class StateStatusForm(FormAction):
             output += f'There are currently {status["recovered"]} recovered cases\n'
         output += f'This data was last updated on {status["lastupdatedtime"]}\n'
         if status['statenotes'] != '':
-            output += f'Extra Notes: {status["statenotes"]}\n'
+            extra = status["statenotes"].replace("<br>", "").replace("- ", "")
+            extra_arr = extra.splitlines(True)
+            notes = ''
+            # Hack to avoid points on date
+            for e in extra_arr:
+                if e[0] == '[':
+                    notes += e
+                elif len(e) > 1:
+                    notes += '- ' + e 
+            output += f'Extra Notes:\n{notes}\n'
         return output
 
 class PrecautionMessage(Action):
