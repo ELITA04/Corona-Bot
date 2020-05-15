@@ -116,10 +116,22 @@
 - deaths in India
 - deaths
 - Deaths
-- deaths in Mizroram
 - All deaths
 - Deaths in india
 - Death
+
+## intent:deaths+enter_state
+- deaths in [Mizroram](state)
+- Whats the dead in [maharashtra](state)?
+- [rajasthan](state) covid updates death
+- number of deaths in [haryana](state)?
+- dead [puducherry](state)?
+- status of dead in [west bengal](state)
+- dead in [goa](state)
+- dead in [assam](state)
+- How many deaths in [Telangana](state)
+- how many deaths in [Maharashtra](state)
+- death rate in [maharashtra](state)?
 
 ## intent:recovered
 - recovered cases
@@ -140,18 +152,6 @@
 - number of cases confirm
 - how many confirmed
 - confirm cases information
-
-## intent:deaths+enter_state
-- Whats the dead in [maharashtra](state)?
-- [rajasthan](state) covid updates death
-- number of deaths in [haryana](state)?
-- dead [puducherry](state)?
-- status of dead in [west bengal](state)
-- dead in [goa](state)
-- dead in [assam](state)
-- How many deaths in [Telangana](state)
-- how many deaths in [Maharashtra](state)
-- death rate in [maharashtra](state)?
 
 ## intent:recovered+enter_state
 - How many recovered cases in [gujarat](state)?
