@@ -17,7 +17,6 @@
 - Hello
 - Hi
 - Hellooo
-- cases in [amethi](district)
 
 ## intent:affirm
 - yes
@@ -247,6 +246,7 @@
 - cases in [Bareilly](district)
 - Today in [Mumbai](district)
 - cases [nagpur](district)
+- cases in [amethi](district)
 - cases in [mumbai](district)
 
 ## intent:help_me
