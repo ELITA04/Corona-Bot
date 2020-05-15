@@ -58,8 +58,9 @@ responses:
   utter_fallback:
   - text: Sorry. I'm afraid I didn't get you.
   utter_help:
-  - text: "You can ask us queries like (but not limited to):\n- Deaths in Maharashtra\n- India covid status\n- Assam recoveries\n- Confirmed cases in Kerala\n- Active cases Delhi
-      etc.\n- We will try our best to keep you informed!"
+  - text: "You can ask us queries like (but not limited to):\n- Deaths in Maharashtra\n\
+      - India covid status\n- Assam recoveries\n- Confirmed cases in Kerala\n- Active\
+      \ cases Delhi etc.\n- We will try our best to keep you informed!"
 actions:
 - action_get_active_cases_of_india
 - action_get_confirmed_cases_of_india
