@@ -58,5 +58,6 @@ rasa shell
 
 ## 👨🏼‍💻 Collaborators
 **[Elita Menezes](https://github.com/ELITA04)**
+
 **[Kevlyn Kadamala](https://github.com/kad99kev)**
 
