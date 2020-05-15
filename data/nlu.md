@@ -12,6 +12,9 @@
 - goodmorning
 - goodevening
 - good afternoon
+- Hey there
+- What is your name?
+- Hello
 
 ## intent:affirm
 - yes
@@ -20,6 +23,7 @@
 - yeah
 - ok
 - okay
+- Yes
 
 ## intent:deny
 - no
@@ -59,9 +63,24 @@
 - how is [puducherry](state) doing currently
 - [india](state) cases
 - [india](state) updates?
-- [india](state) updates?
 - [tamil nadu](state) covid condition?
 - [rajasthan](state) under covid?
+- what is your name
+- How's india corona cases?
+- [Kerala](state)
+- give me updates in [India](state)
+- what about Delhi?
+- [Delhi](state) updates?
+- updates about [maharashtra](state)
+- [assam](state) covid updates?
+- [maharastra](state) updates?
+- How many cases in India?
+- How many cases in india
+- [india](state) covid situation
+- condition in [kerala](state)?
+- how is the situation in [assam](state)?
+- how is the situation in [Goa](state)?
+- cases in [delhi](state)?
 
 ## intent:deaths
 - dead cases
@@ -69,6 +88,9 @@
 - how many died
 - death rate
 - deaths in India
+- deaths
+- Deaths
+- deaths in Mizroram
 
 ## intent:recovered
 - recovered cases
@@ -97,6 +119,9 @@
 - status of dead in [west bengal](state)
 - dead in [goa](state)
 - dead in [assam](state)
+- How many deaths in [Telangana](state)
+- how many deaths in [Maharashtra](state)
+- death rate in [maharashtra](state)?
 
 ## intent:recovered+enter_state
 - How many recovered cases in [gujarat](state)?
@@ -109,6 +134,8 @@
 - [tamil nadu](state) recovered cases ?
 - [tamil nadu](state) recovered cases updates?
 - [uttar pradesh](state) recovered cases please
+- what can you tell me
+- [india](state) covid updates please
 
 ## intent:active+enter_state
 - Updates on [delhi](state) active cases
@@ -116,6 +143,7 @@
 - what is the condition of active cases in [telangana](state)?
 - [goa](state) covid active
 - [maharashtra](state) active cases
+- active cases in [Kerala](state)
 
 ## intent:confirmed+enter_state
 - what is the confirmed number of cases in [tamil nadu](state)?
@@ -131,6 +159,9 @@
 - Thank you so much
 - hey there, thanks!
 - yes thanks
+- bye bye
+- Good job
+- yes, thanks
 
 ## intent:ask_precautions
 - how do i protect myself from covid?
@@ -146,6 +177,31 @@
 - any covid news for today?
 - covid updates
 - inida updates
+- covid news
 
-## lookup:state
+## intent:start
+- What can you tell me
+- what can you do?
+- what do you do?
+
+## intent:other
+- red zones
+- Mumbai cases
+- Red zone
+- Mumbai
+- how are you
+- china updates
+- which are the states with high covid cases?
+- Mumbai updates?
+- red zones in Mumbai
+- which are the green zone states?
+
+## intent:help_me
+- help me 
+- how do i go about?
+- what can I do
+- help me
+- what more can you tell me
+
+## lookup:states.txt
   data/lookup_tables/states.txt

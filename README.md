@@ -15,6 +15,8 @@ Currently the bot supports the following user goals:
 #### Step 2: search for coronabot-ek
 #### Step 3: Talk to the bot for updates
 
+![CoronaBot Working gif](gif/corona_bot.gif)
+
 
 ## ⚙️ How to set up Rasa
 
@@ -54,5 +56,6 @@ rasa shell
 
 
 ## 👨🏼‍💻 Collaborators
+**[Elita Menezes](https://github.com/ELITA04)**
 **[Kevlyn Kadamala](https://github.com/kad99kev)**
 

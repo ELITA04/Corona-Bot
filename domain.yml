@@ -1,44 +1,40 @@
-actions:
-  - action_get_active_cases_of_india
-  - action_get_confirmed_cases_of_india
-  - action_get_death_rate_of_india
-  - action_get_recovered_cases_of_india
-  - action_news_updates
-  - action_provide_precautions
-  - utter_aboutus
-  - utter_apologies
-  - utter_did_that_help
-  - utter_finding_info
-  - utter_greet
-  - utter_happy_to_help
-  - utter_welcome_and_safety_instructions
-  - utter_will_do_better
-
-entities:
-  - state
-
-forms:
-  - state_status_form
-
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-  - active
-  - thanks
-  - enter_state
-  - recovered+enter_state
-  - stop
-  - ask_news
-  - confirmed+enter_state
-  - greet
-  - start
-  - deaths
-  - deaths+enter_state
-  - affirm
-  - active+enter_state
-  - deny
-  - ask_precautions
-  - recovered
-  - confirmed
-
+- active
+- thanks
+- enter_state
+- recovered+enter_state
+- stop
+- ask_news
+- confirmed+enter_state
+- greet
+- start
+- deaths
+- deaths+enter_state
+- affirm
+- active+enter_state
+- deny
+- ask_precautions
+- recovered
+- confirmed
+- other
+- help_me
+entities:
+- state
+slots:
+  requested_slot:
+    type: unfeaturized
+  state:
+    type: text
+    auto_fill: false
+  status:
+    type: bool
+    auto_fill: false
+  validated:
+    type: bool
+    auto_fill: false
 responses:
   utter_aboutus:
   - text: Greetings! I am a bot designed to provide the latest updates in India. I
@@ -56,23 +52,30 @@ responses:
   utter_happy_to_help:
   - text: That's great to know! We are always happy to help!
   utter_welcome_and_safety_instructions:
-  - text: Your welcome! Stay Safe
+  - text: You are welcome! Stay Safe
   utter_will_do_better:
   - text: Apologies! We'll try to do better next time
-
-session_config:
-  carry_over_slots_to_new_session: true
-  session_expiration_time: 60
-
-slots:
-  requested_slot:
-    type: unfeaturized
-  state:
-    auto_fill: false
-    type: text
-  status:
-    auto_fill: false
-    type: bool
-  validated:
-    auto_fill: false
-    type: bool
+  utter_fallback:
+  - text: Sorry. I'm afraid I didn't get you.
+  utter_help:
+  - text: "You can ask us queries like (but not limited to):\n- Deaths in Maharashtra\n- India covid status\n- Assam recoveries\n- Confirmed cases in Kerala\n- Active cases Delhi
+      etc.\n- We will try our best to keep you informed!"
+actions:
+- action_get_active_cases_of_india
+- action_get_confirmed_cases_of_india
+- action_get_death_rate_of_india
+- action_get_recovered_cases_of_india
+- action_news_updates
+- action_provide_precautions
+- utter_aboutus
+- utter_apologies
+- utter_did_that_help
+- utter_finding_info
+- utter_greet
+- utter_happy_to_help
+- utter_welcome_and_safety_instructions
+- utter_will_do_better
+- utter_fallback
+- utter_help
+forms:
+- state_status_form

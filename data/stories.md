@@ -1,6 +1,8 @@
 ## start conversation
 * start
     - utter_aboutus
+* other
+	- utter_fallback
 
 ## ask for overall corona details
 * greet
@@ -11,7 +13,6 @@
     - form{"name": null}
 * thanks
     - utter_welcome_and_safety_instructions
-
 
 ## Wrong entry positive end happy
 * greet
@@ -195,13 +196,13 @@
 * thanks
     - utter_welcome_and_safety_instructions
 
-## interactive_story_1
+## interactive_story_enter_state_1
 * enter_state
     - state_status_form
     - form{"name": "state_status_form"}
     - slot{"requested_slot": "state"}
 
-## interactive_story_2
+## interactive_story_enter_state_affirm_1
 * enter_state{"state": "assam"}
     - state_status_form
     - form{"name": "state_status_form"}
@@ -227,7 +228,7 @@
     - form{"name": null}
     - slot{"requested_slot": null}
 
-## interactive_story_3
+## interactive_story_enter_state_multiple_1
 * deaths+enter_state{"state": "assam"}
     - state_status_form
     - form{"name": "state_status_form"}
@@ -256,7 +257,7 @@
 * affirm
     - utter_happy_to_help
 
-## interactive_story_1
+## interactive_story_deaths_and_enter_state_1
 * greet
     - utter_greet
 * deaths
@@ -274,7 +275,7 @@
     - utter_did_that_help
     - utter_did_that_help
 
-## interactive_story_1
+## interactive_story_large_story_1
 * greet
     - utter_greet
 * enter_state{"state": "sikkim"}
@@ -311,26 +312,26 @@
     - slot{"requested_slot": "status"}
     - utter_welcome_and_safety_instructions
 
-## interactive_story_1
+## interactive_story_enter_state_2
 * enter_state{"state": "india"}
     - state_status_form
 
-## interactive_story_1
+## interactive_story_ask_news_1
 * ask_news
 
-## interactive_story_1
+## interactive_story_enter_state_3
 * enter_state{"state": "india"}
     - state_status_form
 
-## interactive_story_1
+## interactive_story_enter_state_4
 * enter_state{"state": "india"}
     - state_status_form
     - utter_did_that_help
 
-## interactive_story_1
+## interactive_story_stop_1
 * stop
 
-## interactive_story_1
+## interactive_story_large_story_2
 * enter_state{"state": "india"}
     - state_status_form
     - form{"name": "state_status_form"}
@@ -366,7 +367,7 @@
     - form{"name": null}
     - slot{"requested_slot": null}
 
-## interactive_story_2
+## interactive_story_multiple_2
 * recovered+enter_state{"state": "tamil nadu"}
     - state_status_form
     - form{"name": "state_status_form"}
@@ -393,3 +394,33 @@
     - slot{"status": null}
     - form{"name": null}
     - slot{"requested_slot": null}
+
+## New Story
+
+* greet
+    - utter_greet
+* help_me
+    - utter_help
+* enter_state{"state":"india"}
+    - state_status_form
+    - form{"name":"state_status_form"}
+    - slot{"state":"India"}
+    - slot{"validated":true}
+    - slot{"state":null}
+    - slot{"validated":null}
+    - slot{"status":null}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - utter_did_that_help
+* help_me
+    - utter_help
+* deaths
+    - action_get_death_rate_of_india
+    - utter_did_that_help
+* deny
+    - utter_will_do_better
+* active+enter_state{"state":"Kerala"}
+    - state_status_form
+    - utter_did_that_help
+* thanks
+    - utter_welcome_and_safety_instructions
