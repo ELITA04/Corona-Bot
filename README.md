@@ -15,6 +15,7 @@ Currently the bot supports the following user goals:
 #### Step 2: search for coronabot-ek
 #### Step 3: Talk to the bot for updates
 
+
 ![CoronaBot Working gif](gif/corona_bot.gif)
 
 
