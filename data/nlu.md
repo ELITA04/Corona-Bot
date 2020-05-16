@@ -272,6 +272,7 @@
 - [nagpur](district) updates?
 - [nagpur](district)
 - [nagpur](district) updates
+- Test in [Ahmedabad](district)
 
 ## intent:help_me
 - help me
@@ -287,17 +288,25 @@
 
 ## intent:deaths+enter_district
 - Deaths in [Nagpur](district)
+- jashpur deaths
+- Balod death cases
 
 ## intent:confirmed+enter_district
 - [kolkata](district) confirmed cases
 
 ## intent:active+enter_district
 - active cases in [mirpur](district)
+- bhojpur active cases
+- active cases in siwan
 
 ## intent:recovered+enter_district
 - recoveries in [gir somnath](district)
 - recoveries in [nagpur](district)
 - [nagpur](state) recoveries
+- recovered cases in jamui
+- Rajnandgaon recovered cases
+- Mahisagar recovered cases
+- Valsad recovered cases please
 
 ## intent:what_is_covid
 - what is covid?
