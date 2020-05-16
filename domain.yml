@@ -2,8 +2,6 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- enter_district
-- deaths+enter_district
 - active
 - thanks
 - enter_state
@@ -23,6 +21,12 @@ intents:
 - confirmed
 - help_me
 - other
+- enter_district
+- deaths+enter_district
+- active+enter_district
+- confirmed+enter_district
+- recovered+enter_district
+- what_is_covid
 entities:
 - state
 - district
@@ -64,8 +68,9 @@ responses:
   - text: You are welcome! Stay Safe
   utter_will_do_better:
   - text: Apologies! We'll try to do better next time
-  utter_thanks:
-  - text: Thank you!
+  utter_what_is_covid:
+  - text: Coronavirus disease (COVID-19) is an infectious disease caused by a newly
+      discovered coronavirus.
 actions:
 - action_get_active_cases_of_india
 - action_get_confirmed_cases_of_india
@@ -84,5 +89,7 @@ actions:
 - utter_fallback
 - utter_help
 - utter_thanks
+- utter_what_is_covid
 forms:
 - state_status_form
+- district_status_form

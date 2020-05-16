@@ -443,3 +443,21 @@
 * start
     - utter_aboutus
     - utter_help
+
+## what is covid
+* greet
+	- utter_greet
+* what_is_covid
+	- utter_what_is_covid
+* enter_state{"state": "maharashtra"}
+    - state_status_form
+    - form{"name": "state_status_form"}
+    - slot{"state": "Maharashtra"}
+    - slot{"validated": true}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - utter_did_that_help
+* affirm
+    - utter_happy_to_help

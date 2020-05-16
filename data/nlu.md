@@ -105,8 +105,11 @@
 - [maharashtra](state) status
 - [Maharashtra](state)
 - [India](state)
-- [Bihar](state)-unknkown
 - Today new cases in [Maharashtra](state)
+- [Uttarakhand](state)
+- [Jammu and kashmir](state)
+- Daman [and](state) Diu
+- [daman and diu](state)
 
 ## intent:deaths
 - dead cases
@@ -199,6 +202,7 @@
 - Cool
 - Stay safe
 - you too
+- Okay thank you
 
 ## intent:ask_precautions
 - how do i protect myself from covid?
@@ -248,6 +252,27 @@
 - cases [nagpur](district)
 - cases in [amethi](district)
 - cases in [mumbai](district)
+- Todays cases in [Jalgaon](district)
+- [Beed ](district)covid updates
+- [Nanded ](district)updates
+- Hows [Nagpur](district)?
+- [Pune ](district)situation
+-  [Raigad ](district)covid updates please
+- [Yavatmal](district)??
+- [Wardha](district) covid updates please
+- [Sindhudurg ](district)covid
+- [Thane ](district)updates please
+- [mumbai ](district)data
+- [Changlang](district) updates please
+- [Kamle ](district)updates please
+- [Lohit](district) covid
+- [Siang ](district)
+- [Tawang](district) updates
+- [nagpur](state) cases?
+- [mumbai](district)
+- [nagpur](state) updates?
+- [nagpur](state)
+- [nagpur](state) updates
 
 ## intent:help_me
 - help me
@@ -262,7 +287,23 @@
 - welcome
 
 ## intent:deaths+enter_district
-- Deaths in [Nagpur](state)
+- Deaths in [Nagpur](district)
+
+## intent:confirmed+enter_district
+- [kolkata](district) confirmed cases
+- recoveries in [nagpur](state)
+
+## intent:active+enter_district
+- active cases in [mirpur](district)
+
+## intent:recovered+enter_district
+- recoveries in [gir somnath](district)
+- [nagpur](state) recoveries
+
+## intent:what_is_covid
+- what is covid?
+- what is covid19
+- what is covid
 
 ## lookup:states.txt
   data/lookup_tables/states.txt
