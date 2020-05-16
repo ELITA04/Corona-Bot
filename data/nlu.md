@@ -108,7 +108,6 @@
 - Today new cases in [Maharashtra](state)
 - [Uttarakhand](state)
 - [Jammu and kashmir](state)
-- Daman [and](state) Diu
 - [daman and diu](state)
 
 ## intent:deaths
@@ -233,7 +232,6 @@
 ## intent:other
 - red zones
 - Red zone
-- [Mumbai](district)
 - how are you
 - china updates
 - which are the states with high covid cases?
@@ -244,6 +242,7 @@
 
 ## intent:enter_district
 - [Mumbai](district) cases
+- [Mumbai](district)
 - [Mumbai](district) updates?
 - Cases in [Pune](district)
 - [Wayanad](district)
@@ -253,26 +252,26 @@
 - cases in [amethi](district)
 - cases in [mumbai](district)
 - Todays cases in [Jalgaon](district)
-- [Beed ](district)covid updates
-- [Nanded ](district)updates
+- [Beed](district) covid updates
+- [Nanded](district) updates
 - Hows [Nagpur](district)?
-- [Pune ](district)situation
--  [Raigad ](district)covid updates please
+- [Pune](district) situation
+-  [Raigad](district) covid updates please
 - [Yavatmal](district)??
 - [Wardha](district) covid updates please
-- [Sindhudurg ](district)covid
-- [Thane ](district)updates please
-- [mumbai ](district)data
+- [Sindhudurg](district) covid
+- [Thane](district) updates please
+- [mumbai](district) data
 - [Changlang](district) updates please
-- [Kamle ](district)updates please
+- [Kamle](district) updates please
 - [Lohit](district) covid
-- [Siang ](district)
+- [Siang](district) 
 - [Tawang](district) updates
-- [nagpur](state) cases?
+- [nagpur](district) cases?
 - [mumbai](district)
-- [nagpur](state) updates?
-- [nagpur](state)
-- [nagpur](state) updates
+- [nagpur](district) updates?
+- [nagpur](district)
+- [nagpur](district) updates
 
 ## intent:help_me
 - help me
@@ -291,13 +290,13 @@
 
 ## intent:confirmed+enter_district
 - [kolkata](district) confirmed cases
-- recoveries in [nagpur](state)
 
 ## intent:active+enter_district
 - active cases in [mirpur](district)
 
 ## intent:recovered+enter_district
 - recoveries in [gir somnath](district)
+- recoveries in [nagpur](district)
 - [nagpur](state) recoveries
 
 ## intent:what_is_covid
