@@ -71,6 +71,8 @@ responses:
   utter_what_is_covid:
   - text: Coronavirus disease (COVID-19) is an infectious disease caused by a newly
       discovered coronavirus.
+  utter_thanks:
+  - text: Thank you!
 actions:
 - action_get_active_cases_of_india
 - action_get_confirmed_cases_of_india
@@ -90,6 +92,7 @@ actions:
 - utter_help
 - utter_thanks
 - utter_what_is_covid
+- utter greet
 forms:
 - state_status_form
 - district_status_form

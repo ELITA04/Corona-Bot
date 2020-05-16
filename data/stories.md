@@ -461,3 +461,19 @@
     - utter_did_that_help
 * affirm
     - utter_happy_to_help
+
+## district story
+* greet
+	- utter greet
+* enter_district{"state": "nagpur"}
+    - state_status_form
+    - form{"name": "district_status_form"}
+    - slot{"state": "Nagpur"}
+    - slot{"validated": true}
+    - slot{"state": null}
+    - slot{"validated": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - utter_did_that_help
+* affirm
+    - utter_happy_to_help
