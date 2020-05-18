@@ -112,9 +112,8 @@
 - [Uttarakhand](state)
 - [Jammu and kashmir](state)
 - [daman and diu](state)
-- Affected in [udupi](district)
-- [karnataka](district)
-- [Karnataka](district)
+- [karnataka](state)
+- [Karnataka](state)
 - I mean [Karnataka](state)
 - Affected  in [Karnataka](state)
 
@@ -143,6 +142,7 @@
 - how many deaths in [Maharashtra](state)
 - death rate in [maharashtra](state)?
 - Deaths in [Uttar Pradesh](state)
+- deaths in [uttar pradesh](state)
 
 ## intent:recovered
 - recovered cases
@@ -195,6 +195,7 @@
 - [naggland](state) confirmed cases
 - [arunachal pradesh](state) confirm cases
 - Confirmed cases in [Gujarat](state)
+- Confirmed cases in [kerala](state)
 
 ## intent:thanks
 - thanks
@@ -285,9 +286,10 @@
 - Test in [Ahmedabad](district)
 - Details on [Moradabad](district)
 - [Moradabad](district)
+- Affected in [udupi](district)
 - [Waynad](district)
 - cases in [nagpur](district)
-- [udupi](state)
+- [udupi](district)
 - [sawai madhopur](district)
 - [moradabad](district)
 - [Udupi](district) Karnataka
@@ -310,6 +312,9 @@
 - [Rajouri](district) deaths 
 - Deaths in [Moradabad](district)
 - Deaths in [Moradabad](district) district
+- deaths in sawal [madhopur](district)
+- deaths in [moradabad](district)
+- Death in [sawai madhopur](district)
 
 ## intent:confirmed+enter_district
 - [kolkata](district) confirmed cases
