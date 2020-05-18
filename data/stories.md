@@ -462,18 +462,58 @@
 * affirm
     - utter_happy_to_help
 
-## district story
-* greet
-	- utter greet
-* enter_district{"state": "nagpur"}
-    - state_status_form
+## District Story 1
+* enter_district{"district": "changlang"}
+    - district_status_form
     - form{"name": "district_status_form"}
-    - slot{"state": "Nagpur"}
+    - slot{"district": "Changlang"}
     - slot{"validated": true}
-    - slot{"state": null}
+    - slot{"district": null}
     - slot{"validated": null}
+    - slot{"status": null}
     - form{"name": null}
     - slot{"requested_slot": null}
-    - utter_did_that_help
-* affirm
-    - utter_happy_to_help
+* recovered+enter_district{"district": "ramanagara"}
+    - district_status_form
+    - form{"name": "district_status_form"}
+    - slot{"status": "recovered"}
+    - slot{"district": "Ramanagara"}
+    - slot{"validated": true}
+    - slot{"district": null}
+    - slot{"validated": null}
+    - slot{"status": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+* deaths+enter_district{"district": "udupi"}
+    - district_status_form
+    - form{"name": "district_status_form"}
+    - slot{"status": "deaths"}
+    - slot{"district": "Udupi"}
+    - slot{"validated": true}
+    - slot{"district": null}
+    - slot{"validated": null}
+    - slot{"status": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+* active+enter_district{"district": "kanyakumari"}
+    - district_status_form
+    - form{"name": "district_status_form"}
+    - slot{"status": "active"}
+    - slot{"district": "Kanyakumari"}
+    - slot{"validated": true}
+    - slot{"district": null}
+    - slot{"validated": null}
+    - slot{"status": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+* confirmed+enter_district{"district": "jalpaiguri"}
+    - district_status_form
+    - form{"name": "district_status_form"}
+    - slot{"status": "confirmed"}
+    - slot{"district": "Jalpaiguri"}
+    - slot{"validated": true}
+    - slot{"district": null}
+    - slot{"validated": null}
+    - slot{"status": null}
+    - form{"name": null}
+    - slot{"requested_slot": null}

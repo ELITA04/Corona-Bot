@@ -31,6 +31,9 @@ entities:
 - state
 - district
 slots:
+  district:
+    type: text
+    auto_fill: false
   requested_slot:
     type: unfeaturized
   state:
@@ -92,7 +95,6 @@ actions:
 - utter_help
 - utter_thanks
 - utter_what_is_covid
-- utter greet
 forms:
 - state_status_form
 - district_status_form

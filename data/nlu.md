@@ -17,6 +17,8 @@
 - Hello
 - Hi
 - Hellooo
+- Hi mr robot
+- Hellooo mate
 
 ## intent:affirm
 - yes
@@ -27,6 +29,7 @@
 - okay
 - Yes
 - Okay
+- Yes okay
 
 ## intent:deny
 - no
@@ -109,6 +112,11 @@
 - [Uttarakhand](state)
 - [Jammu and kashmir](state)
 - [daman and diu](state)
+- Affected in [udupi](district)
+- [karnataka](district)
+- [Karnataka](district)
+- I mean [Karnataka](state)
+- Affected  in [Karnataka](state)
 
 ## intent:deaths
 - dead cases
@@ -134,6 +142,7 @@
 - How many deaths in [Telangana](state)
 - how many deaths in [Maharashtra](state)
 - death rate in [maharashtra](state)?
+- Deaths in [Uttar Pradesh](state)
 
 ## intent:recovered
 - recovered cases
@@ -185,6 +194,7 @@
 - [odisha](state) status confirm
 - [naggland](state) confirmed cases
 - [arunachal pradesh](state) confirm cases
+- Confirmed cases in [Gujarat](state)
 
 ## intent:thanks
 - thanks
@@ -273,6 +283,14 @@
 - [nagpur](district)
 - [nagpur](district) updates
 - Test in [Ahmedabad](district)
+- Details on [Moradabad](district)
+- [Moradabad](district)
+- [Waynad](district)
+- cases in [nagpur](district)
+- [udupi](state)
+- [sawai madhopur](district)
+- [moradabad](district)
+- [Udupi](district) Karnataka
 
 ## intent:help_me
 - help me
@@ -288,25 +306,31 @@
 
 ## intent:deaths+enter_district
 - Deaths in [Nagpur](district)
-- jashpur deaths
-- Balod death cases
+- [Balod](district) death cases
+- [Rajouri](district) deaths 
+- Deaths in [Moradabad](district)
+- Deaths in [Moradabad](district) district
 
 ## intent:confirmed+enter_district
 - [kolkata](district) confirmed cases
+- [Doda](district) confirmed cases
+- Confirmed cases in [Kathua](district)
+- [Nadia](district) confirmed cases
+- [nagpur](district) confirmed cases
 
 ## intent:active+enter_district
 - active cases in [mirpur](district)
-- bhojpur active cases
-- active cases in siwan
+- [bhojpur](district) active cases
+- active cases in [siwan](district)
 
 ## intent:recovered+enter_district
 - recoveries in [gir somnath](district)
 - recoveries in [nagpur](district)
-- [nagpur](state) recoveries
-- recovered cases in jamui
-- Rajnandgaon recovered cases
-- Mahisagar recovered cases
-- Valsad recovered cases please
+- [nagpur](district) recoveries
+- recovered cases in [jamui](district)
+- [Rajnandgaon](district) recovered cases
+- [Mahisagar](district) recovered cases
+- [Valsad](district) recovered cases please
 
 ## intent:what_is_covid
 - what is covid?
