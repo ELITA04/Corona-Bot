@@ -12,7 +12,7 @@ Currently the bot supports the following user goals:
 
 ## 📱 How to get these updates on your mobile
 #### Step 1: Install telegram
-#### Step 2: search for [coronabot-ek](https://t.me/corona_em_bot)
+#### Step 2: search for [coronabot-ek](https://t.me/corona_em_bot)  (bot is currently discontinued)
 #### Step 3: Talk to the bot for updates
 
 
